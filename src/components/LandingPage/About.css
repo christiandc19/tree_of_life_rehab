@@ -1,0 +1,124 @@
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1rem auto;
+    padding: 1rem;
+
+  }
+  
+  .about-image {
+    width: 100%;
+  }
+
+  .about-image img {
+    width: 100%;
+    display: block;
+    border-radius: .5rem;
+    margin: auto;
+  }
+
+  .about-content {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .about-content h1 {
+    color: var(--primary-color);
+    font-family: "Noto Serif Oriya", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    font-size: 1.5rem;
+    padding: 2rem 0;
+
+  }
+  
+  .about-content h2 {
+    font-size: 2rem;
+  }
+  
+  .about-content p {
+    font-size: 16px;
+  }
+  
+
+  .aboutUsLetters h1 {
+    color: var(--primary-color);
+    font-family: "Noto Serif Oriya", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    font-size: 1.5rem;
+  }
+
+  .aboutHomeImage {
+    position: relative;
+    width: 150px; /* Adjust to your preferred size */
+    height: 150px;
+    margin: 3rem 0;
+    overflow: hidden;
+    
+  }
+  
+  .aboutHomeImage img {
+    position: absolute; /* Position absolute for smooth movement */
+    top: 50%; /* Start at the center */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the image */
+    transition: transform 0.1s ease-out; /* Smooth transition */
+    display: block; /* Ensure the image is displayed as a block */
+  max-width: 100%; /* Scale the image to fit within its container */
+  height: auto; /* Maintain aspect ratio */
+  }
+
+  @media screen and (max-width:940px) {
+
+    .aboutUsLetters   {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .aboutHomeImage {
+      margin: 3rem auto;
+    }
+    
+    .about-content h1 {
+      text-align: center;
+    }
+
+    .aboutUsLetters h1 {
+      font-size: 1rem;
+    }
+
+    .about-container {
+        flex-wrap: wrap;
+      }  
+      
+      .about-content {
+        width: 100%;
+      }
+
+      .about-image {
+        width: 75%;
+      }
+    }
+
+    @media screen and (max-width:500px) {
+      .about-content h2 {
+        text-align: center;
+      }
+
+      .about-content p {
+        text-align: justify;
+        line-height: normal;
+      }
+
+      .about-image {
+        width: 100%;
+      }
+      
+    }

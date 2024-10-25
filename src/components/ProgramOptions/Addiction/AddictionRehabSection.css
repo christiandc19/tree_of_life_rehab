@@ -1,0 +1,106 @@
+/* AlcoholHeroinRehab.css */
+.rehab-container {
+    width: 100%;
+  }
+  
+  .alcoholism-program-header {
+    padding: 1rem;
+  }
+
+  .alcoholism-program-header h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #2E788C;
+    font-family: "Noto Serif Oriya", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    padding: 1rem 0;
+  }
+  
+  .alcoholism-program-header p {
+    font-size: 16px;
+    text-align: center;
+    color: rgb(32, 30, 30);
+  }
+  
+  .rehab-program {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem 1rem;
+  }
+
+  
+  .rehab-program-image {
+        width: 100%;
+        border-radius: 10px;
+        background-size: cover;
+        background-position: center;
+    }  
+
+    .rehab-program-image img {
+        width: 100%;
+        display: none;
+    }
+  
+    .alcohol-bg {
+        background-image: url('../../../assets/alcoholic_man.webp');
+    }
+
+    .heroin-bg {
+        background-image: url('../../../assets/heroin_addiction.webp');
+    }
+
+  .rehab-program-image2 {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background: rgba(0, 0, 0, 0);
+  }
+  
+
+  .rehab-program-content {
+    width: 100%;
+    margin: auto;
+  }
+  
+  .rehab-program-content h2 {
+    font-size: 1rem;
+    color: #2E788C;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  .rehab-program-content p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  
+
+  @media screen and (max-width:940px) {
+    .rehab-program-content h2 {
+        font-size: 1.5rem;
+      }
+
+
+    .rehab-program {
+        flex-wrap: wrap;
+      }
+
+    .rehab-program-image img {
+        display: block;
+        border-radius: 10px;
+    }
+
+    .rehab-program-content {
+        text-align: center;
+      }
+
+      .flex-reverse {
+        flex-wrap: wrap-reverse;
+      }
+      
+
+  }
