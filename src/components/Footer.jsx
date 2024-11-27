@@ -20,16 +20,14 @@ const Footer = () => {
 
             <div className="logo-footer">
               <img src={logo} alt="Sacramento Rehab Logo" loading="lazy"/>
+              
               <div>
-                <p>Phone Number here</p>
-                <p>Los Angeles, CA</p>
+              <p><a href="tel:3233645172"> Call Us: 1 (323) 364-5172</a></p>
+              <p>2171 E. Francisco Blvd, Suite O, San Rafael, CA 94901</p>
+              <p><a href="mailto:Info@ShastaCountyRehab.com">Email Us: info@TreeOfLifeRehab.com</a></p>
+
               </div>
             </div>
-
-
-
-
-
 
             <div className="column">
               <h3>COMPANY</h3>
@@ -102,11 +100,11 @@ const Footer = () => {
 
 
           </div>
-
+            <div className="copyright">
             <p>
-              &copy; 2024 Tree Of Live Rehab. All rights reserved
+              &copy; 2024 Tree Of Life Rehab. All rights reserved
             </p>
-
+            </div>
 
 
         </div>

@@ -34,7 +34,7 @@ const Hero = () => {
 
                         <h1>Nurturing Growth, Restoring Lives.</h1>
                         <p>
-                            Medication-Assisted Inpatient & Outpatient Drug and Alcohol Addiction Treatment at our Los Angeles Rehab, serving the greater LA area.
+                            Medication-Assisted Inpatient & Outpatient Drug and Alcohol Addiction Treatment at Tree Of Life Rehab, serving the greater San Rafael area.
                         </p>
                         <div className='hero-btn'>
                             <Link to="/inpatient-rehab" onClick={scrollToTop}>

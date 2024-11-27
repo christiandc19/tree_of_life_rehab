@@ -4,9 +4,9 @@ import './DualDiagnosisProgram.css'; // CSS for styling
 const DualDiagnosisProgram = () => {
   return (
     <div className="dual-diagnosis-container">
-      <h1>Dual Diagnosis Program at Tree Of Live Rehab Center</h1>
+      <h1>Dual Diagnosis Program at Tree Of Life Rehab Center</h1>
       <p className="intro-text">
-        The <strong>Dual Diagnosis Program</strong> at Tree Of Live Rehab Center is designed to provide comprehensive care for individuals struggling with both <strong>mental health disorders</strong> and <strong>substance use disorders</strong>. Our team of experts is dedicated to helping patients achieve long-lasting recovery by addressing both conditions simultaneously, ensuring a holistic and integrated approach to treatment.
+        The <strong>Dual Diagnosis Program</strong> at Tree Of Life Rehab Center is designed to provide comprehensive care for individuals struggling with both <strong>mental health disorders</strong> and <strong>substance use disorders</strong>. Our team of experts is dedicated to helping patients achieve long-lasting recovery by addressing both conditions simultaneously, ensuring a holistic and integrated approach to treatment.
       </p>
 
       <section className="program-details">
@@ -19,7 +19,7 @@ const DualDiagnosisProgram = () => {
       <section className="treatment-approach">
         <h2>Our Treatment Approach</h2>
         <p>
-          At Tree Of Live Rehab Center, we use a multidisciplinary approach to <strong>dual diagnosis treatment</strong>. Our programs integrate mental health care with addiction treatment to ensure patients receive the support they need on all fronts. Here’s what our dual diagnosis program includes:
+          At Tree Of Life Rehab Center, we use a multidisciplinary approach to <strong>dual diagnosis treatment</strong>. Our programs integrate mental health care with addiction treatment to ensure patients receive the support they need on all fronts. Here’s what our dual diagnosis program includes:
         </p>
 
         <ul>
@@ -45,9 +45,9 @@ const DualDiagnosisProgram = () => {
       </section>
 
       <section className="why-choose-us">
-        <h2>Why Choose Tree Of Live Rehab Center?</h2>
+        <h2>Why Choose Tree Of Life Rehab Center?</h2>
         <p>
-          Tree Of Live Rehab Center is committed to offering the highest quality care for individuals with <strong>co-occurring disorders</strong>. Our experienced team understands the complexities of <strong>dual diagnosis</strong> and provides compassionate, comprehensive treatment tailored to each individual's needs.
+          Tree Of Life Rehab Center is committed to offering the highest quality care for individuals with <strong>co-occurring disorders</strong>. Our experienced team understands the complexities of <strong>dual diagnosis</strong> and provides compassionate, comprehensive treatment tailored to each individual's needs.
         </p>
         <p>
           We believe in treating the whole person, addressing both the mental and physical aspects of recovery. Our integrated approach increases the likelihood of long-term success and improved mental health.
@@ -57,7 +57,7 @@ const DualDiagnosisProgram = () => {
       <section className="call-to-action">
         <h2>Start Your Recovery Today</h2>
         <p>
-          If you or someone you love is struggling with both mental health and substance use disorders, don’t wait. Contact Tree Of Live Rehab Center to learn more about our <strong>dual diagnosis treatment program</strong> and take the first step towards a healthier, addiction-free life.
+          If you or someone you love is struggling with both mental health and substance use disorders, don’t wait. Contact Tree Of Life Rehab Center to learn more about our <strong>dual diagnosis treatment program</strong> and take the first step towards a healthier, addiction-free life.
         </p>
       </section>
     </div>

@@ -12,6 +12,7 @@ import InpatientRehab from './components/ProgramOptions/InpatientRehab/Inpatient
 import DualDiagnosisProgram from './components/ProgramOptions/DualDiagnosis/DualDiagnosis';
 import MATProgram from './components/ProgramOptions/MATProgram/MAT';
 import VeteransAddiction from './components/ProgramOptions/VeteransAddiction/VeteransAddictionHero';
+import TreatmentPage from './components/Treatment/Treatment';
 
 import DrugAddictionTreatment from './components/Addiction/DrugRehab/DrugAddiction';
 import HeroinProgram from './components/Addiction/HeroinProgram/HeroinProgram';
@@ -50,6 +51,9 @@ const App = () => {
         <Route path="/heroin-program" element={<HeroinProgram />} />
         <Route path="/xanax-rehab" element={<XanaxRehab />} />
         <Route path="/ativan-rehab" element={<AtivanRehab />} />
+
+        {/* Treatment */}
+        <Route path="/treatment" element={<TreatmentPage />} />
 
         <Route path="/alcoholism" element={<Alcoholism />} />
         <Route path="/cocaine-addiction-treatment" element={<CocaineAddictionTreatment />} />

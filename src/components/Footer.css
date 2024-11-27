@@ -44,10 +44,16 @@
   width: 50%;  
 }
 
-.logo-footer p {
-  font-size: 14px;
+.logo-footer a {
+  font-size: 16px;
+  color: rgb(17, 16, 16);
 }
 
+.logo-footer p {
+  font-size: 16px;
+  color: rgb(17, 16, 16);
+  padding: .5rem 1rem;
+}
 
 
 .footer h2 {
@@ -85,14 +91,7 @@
   text-transform: uppercase;
   text-align: center;
   padding: 1rem 0;
-}
-
-
-
-
-.certification a:hover {
-  text-align: center;
-  color: rgb(10, 208, 235);
+  font-size: 1rem;
 }
 
 

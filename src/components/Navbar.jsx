@@ -33,9 +33,7 @@ const Navbar = () => {
     <nav className={`navbar ${isScrolled || !isHomePage ? 'scrolled' : ''}`} name="top">
       <div className="nav-box container">
         <div className="navbar-logo">
-          <h1>Tree of Life Rehab</h1>
-          {/* Dynamically switch logo based on scroll state or homepage */}
-          {/* <img src={isScrolled || !isHomePage ? logoDark : logo} alt="logo" loading="lazy" /> */}
+          <img src={isScrolled || !isHomePage ? logoDark : logo} alt="logo" loading="lazy" />
         </div>
         <button
           className="hamburger"
@@ -46,11 +44,12 @@ const Navbar = () => {
         </button>
         <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
           <li><Link to="/" onClick={() => { closeMenu(); scrollToTop(); }}>Home</Link></li>
+          <li><Link to="/treatment" onClick={() => { closeMenu(); scrollToTop(); }}>Treatment</Link></li>
 
           {/* Dropdown for Program Options */}
           <li className="dropdown">
             <Link to="#" role="button" aria-haspopup="true" aria-expanded={isMenuOpen ? 'true' : 'false'}>
-              Program Options
+              Levels Of Care
             </Link>
             <ul className="dropdown-menu">
               <li><Link to="/addiction-program" onClick={() => { closeMenu(); scrollToTop(); }}>Addiction Treatment Program</Link></li>
@@ -96,7 +95,7 @@ const Navbar = () => {
           </li>
 
           <li><Link to="/about" onClick={() => { closeMenu(); scrollToTop(); }}>About</Link></li>
-          <li><Link to="/contact" onClick={() => { closeMenu(); scrollToTop(); }}><button>Contact Us</button></Link></li>
+          <li><Link to="/contact" onClick={() => { closeMenu(); scrollToTop(); }}>Contact Us</Link></li>
         </ul>
       </div>
     </nav>

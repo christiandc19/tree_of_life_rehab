@@ -34,7 +34,7 @@ const Offer = () => {
                             </div>
                             <div className='iconText borderBtm'>
                                 <h2>Drug Addiction Treatment</h2>
-                                <p>At Tree Of Live Rehab, we offer specialized drug addiction treatment programs designed to help individuals break free from the cycle of substance abuse and reclaim their lives. Our compassionate, evidence-based approach ensures each client receives personalized care tailored to their unique recovery journey. <span><Link to="/drug-addiction-treatment" onClick={scrollToTop}>Learn More</Link></span></p>
+                                <p>At Tree Of Life Rehab, we offer specialized drug addiction treatment programs designed to help individuals break free from the cycle of substance abuse and reclaim their lives. Our compassionate, evidence-based approach ensures each client receives personalized care tailored to their unique recovery journey. <span><Link to="/drug-addiction-treatment" onClick={scrollToTop}>Learn More</Link></span></p>
                             </div>
                         </div>
                     </div>
@@ -60,7 +60,7 @@ const Offer = () => {
                             </div>
                             <div className='iconText borderBtm'>
                                 <h2>Xanax Addiction Treatment</h2>
-                                <p>Xanax addiction can develop quickly, leading to physical dependence and severe withdrawal symptoms when attempting to quit. At Tree Of Live Rehab, we offer a comprehensive, medically supervised treatment program designed to safely guide individuals through detox and provide the tools needed for long-term recovery. <span><Link to="/xanax-rehab" onClick={scrollToTop}>Learn More</Link></span></p>
+                                <p>Xanax addiction can develop quickly, leading to physical dependence and severe withdrawal symptoms when attempting to quit. At Tree Of Life Rehab, we offer a comprehensive, medically supervised treatment program designed to safely guide individuals through detox and provide the tools needed for long-term recovery. <span><Link to="/xanax-rehab" onClick={scrollToTop}>Learn More</Link></span></p>
                             </div>
                         </div>
                     </div>
@@ -72,7 +72,7 @@ const Offer = () => {
                             </div>
                             <div className='iconText borderBtm'>
                                 <h2>Ativan Addiction Treatment</h2>
-                                <p>Ativan addiction can quickly develop due to its potent effects on the central nervous system, often leading to physical and psychological dependence. At Tree Of Live Rehab, we provide specialized, compassionate treatment to help individuals safely overcome Ativan addiction and achieve lasting recovery. <span><Link to="/ativan-rehab" onClick={scrollToTop}>Learn More</Link ></span></p>
+                                <p>Ativan addiction can quickly develop due to its potent effects on the central nervous system, often leading to physical and psychological dependence. At Tree Of Life Rehab, we provide specialized, compassionate treatment to help individuals safely overcome Ativan addiction and achieve lasting recovery. <span><Link to="/ativan-rehab" onClick={scrollToTop}>Learn More</Link ></span></p>
                             </div>
                         </div>
                     </div>

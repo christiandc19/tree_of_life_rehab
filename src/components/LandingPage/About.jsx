@@ -69,13 +69,13 @@ const About = () => {
 
         <h1>About Us</h1>
         <p>
-        At Tree Of Live Rehab, we believe in the power of healing, transformation, and support. Established with the vision of providing comprehensive care for individuals battling addiction and mental health challenges, we offer a safe haven where recovery is not only possible but sustainable. Our team of compassionate professionals is dedicated to creating personalized treatment plans tailored to meet the unique needs of each individual.
+        At Tree Of Life Rehab, we believe in the power of healing, transformation, and support. Established with the vision of providing comprehensive care for individuals battling addiction and mental health challenges, we offer a safe haven where recovery is not only possible but sustainable. Our team of compassionate professionals is dedicated to creating personalized treatment plans tailored to meet the unique needs of each individual.
         </p>
         <p>
-        We recognize that addiction is a multifaceted issue that affects every aspect of life, and that’s why our approach integrates medical, psychological, and holistic therapies. At Tree Of Live Rehab, we aim to not only address the immediate challenges of substance abuse but also foster long-term well-being and personal growth.
+        We recognize that addiction is a multifaceted issue that affects every aspect of life, and that’s why our approach integrates medical, psychological, and holistic therapies. At Tree Of Life Rehab, we aim to not only address the immediate challenges of substance abuse but also foster long-term well-being and personal growth.
         </p>
         <p>Our state-of-the-art facilities and experienced staff provide a supportive and nurturing environment for recovery. We offer a range of services, including detox, inpatient and outpatient care, dual diagnosis treatment, and relapse prevention. Every step of your journey is backed by our commitment to your health and recovery.</p>
-        <p>At Tree Of Live Rehab, you are never alone. We walk alongside you through the toughest battles, empowering you to reclaim your life, rediscover hope, and embrace Renewal.
+        <p>At Tree Of Life Rehab, you are never alone. We walk alongside you through the toughest battles, empowering you to reclaim your life, rediscover hope, and embrace Renewal.
 </p>
 
       </div>

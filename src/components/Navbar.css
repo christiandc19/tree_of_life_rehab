@@ -1,90 +1,90 @@
-/* General Navbar Styles */
+/* General Variables */
+:root {
+    --primary-color: #2E788C;
+    --hover-color: #cd8c63;
+    --background-light: #f6f4f2;
+    --text-color: #292525;
+}
+
+/* Body Scroll Lock */
+.body-no-scroll {
+    overflow: hidden;
+}
+
+/* Navbar Styles */
 .navbar {
-    background-color: #f6f4f2; /* Default background color */
-    transition: background-color 0.3s ease; /* Smooth transition */
-    position: relative; /* Fixed navbar on scroll */
+    background-color: var(--background-light);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
     top: 0;
     width: 100%;
     z-index: 10;
-    border-bottom: 1px solid #ffffff4d;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-logo {
-    width: max-content;
-    padding: 2rem .5rem;
-    z-index: 1000; /* Ensure the navbar stays above other content */
-    /* border-right: 1px solid #ffffff4d; */
+    width: 120px;
+    padding: 1rem;
 }
 
-.navbar-logo img{
+.navbar-logo img {
     width: 100%;
-}
-
-.navbar-logo h1 {
-    font-family: "Merriweather", serif;
-    font-weight: 300;
-    font-size: 1.5rem;
+    display: block;
 }
 
 .nav-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%; /* Make sure the content inside the navbar also spans the full width */
+    width: 100%;
+    padding: 0 1rem;
 }
 
 .nav-menu {
     display: flex;
     list-style: none;
-    transition: all 0.3s ease;
     margin: 0;
-}
-
-.nav-menu button {
-    background-color: var(--primary-color);
-    border: none;
-    border-radius: 20px;
-    color: white
+    padding: 0;
+    transition: all 0.3s ease;
 }
 
 .nav-menu li {
     position: relative;
-    margin: auto;
 }
 
 .nav-menu a {
-    color: rgb(41, 37, 37);
+    color: var(--text-color);
     text-decoration: none;
     padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
-.nav-menu a:hover {
-    color: #cd8c63;
+.nav-menu a:hover,
+.nav-menu a:focus-visible {
+    color: var(--hover-color);
 }
-
 
 /* Hamburger Menu */
 .hamburger {
     display: none;
     font-size: 2rem;
     cursor: pointer;
-    color: var(--primary-color); /* Ensure the icon is visible against the background */
-    z-index: 1001; /* Higher than the nav menu */
-    background: none; /* Remove any background color */
-    border: none; /* Remove any border */
-    outline: none; /* Remove the outline on focus */
-    padding: 2rem; /* Remove any padding */
+    color: var(--primary-color);
+    background: none;
+    border: none;
+    outline: none;
+    z-index: 1001;
 }
 
-/* Remove border and outline when the icon is clicked or focused */
-.hamburger:focus,
-.hamburger:active {
-    outline: none; /* Remove outline when the icon is focused */
-    border: none; /* Ensure no border appears on active state */
-    box-shadow: none; /* Remove any box-shadow if applied */
+.hamburger:focus-visible {
+    outline: 2px solid var(--hover-color);
+    outline-offset: 4px;
 }
 
-/* Dropdown Menu Styles */
+/* Dropdown Menu */
 .dropdown {
     position: relative;
 }
@@ -92,80 +92,102 @@
 .dropdown-menu {
     display: none;
     position: absolute;
-    top: 120%; /* Aligns the dropdown just below the parent */
-    background-color: #f6f4f2;
-    border-radius: .2rem;
+    top: 100%;
+    left: 0;
+    background-color: var(--background-light);
+    border-radius: 0.2rem;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1000;
     flex-direction: column;
     width: max-content;
+    padding: 0.5rem 0;
 }
 
-/* Show dropdown menu on hover (for desktop) or when active (for mobile) */
 .dropdown:hover .dropdown-menu,
 .dropdown-menu.active {
-    display: flex; /* Flexbox for column layout on mobile */
+    display: flex;
 }
 
 .dropdown-menu li {
-    width: 100%;
-    left: -2.5rem;
-    padding: .5rem;
+    margin: 0;
+    padding: 0.5rem 1rem;
 }
 
 .dropdown-menu a {
-    color: rgb(29, 27, 27);
-    font-family: 'roboto';
+    color: var(--text-color);
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+    transition: color 0.3s ease;
 }
 
 .dropdown-menu a:hover {
-    color: #cd8c63;
+    color: var(--hover-color);
 }
-
-/* Additional Hover Effect */
-
-
-
 
 /* Responsive Navbar */
 @media screen and (max-width: 940px) {
-
     .hamburger {
-        display: block; /* Show the hamburger menu icon on smaller screens */
+        display: block;
     }
 
     .nav-menu {
         flex-direction: column;
-        position: fixed; /* Keep the nav menu fixed within the viewport */
+        position: fixed;
         top: 0;
-        top: -100%; /* Initially hide the menu off-screen */
-        width: 100%;
-        height: 100vh; /* Cover the entire viewport height */
-        background-color: #f6f4f2;
-        transition: top 0.3s ease;
-        z-index: 999; /* Ensure the menu stays on top of other content */
-        padding-top: 8rem; /* Adjust padding to avoid overlap with the hamburger icon */
+        left: -100%; /* Initially hidden off-screen */
+        width: 70%;
+        height: 100vh;
+        background-color: var(--primary-color);
+        transition: left 0.3s ease;
+        z-index: 999;
+        padding: 4rem 2rem;
+        overflow-y: auto;
     }
 
     .nav-menu.active {
-        top: 0; /* Show the menu by moving it into view */
+        left: 0; /* Slide into view */
     }
 
     .nav-menu li {
-        margin-left: 0;
-        margin: .5rem 0;
+        margin: 0;
         text-align: left;
+        border-bottom: 1px dashed rgba(255, 255, 255, 0.4);
+        padding: 0.5rem 0;
+    }
+
+    .nav-menu a {
+        color: #fff;
+    }
+
+    .nav-menu a:hover {
+        color: var(--hover-color);
     }
 
     .dropdown-menu {
         position: relative;
         top: 0;
         left: 0;
-        width: 100%;
-        background-color: #ffffff;
+        background-color: #6A6932;
+        width: 90%;
+        margin-left: 0;
     }
+}
 
+/* Backdrop for Mobile Menu */
+.nav-backdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
 
-
-
+.nav-backdrop.active {
+    display: block;
+    opacity: 1;
 }

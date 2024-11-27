@@ -9,7 +9,7 @@ const AlcoholHeroinRehab = () => {
       <section className="alcoholism-program-header container">
         <h1>Alcohol and Heroin Addiction Rehab</h1>
         <p>
-          At Tree Of Live Rehab Center, we specialize in comprehensive treatment programs for <strong>Alcohol Addiction</strong> and <strong>Heroin Addiction</strong>. Our goal is to provide effective recovery paths tailored to meet individual needs, helping you overcome addiction and regain control of your life.
+          At Tree Of Life Rehab Center, we specialize in comprehensive treatment programs for <strong>Alcohol Addiction</strong> and <strong>Heroin Addiction</strong>. Our goal is to provide effective recovery paths tailored to meet individual needs, helping you overcome addiction and regain control of your life.
         </p>
       </section>
 
@@ -24,7 +24,7 @@ const AlcoholHeroinRehab = () => {
         <div className="rehab-program-content">
           <h2>Alcohol Addiction Rehab Program</h2>
           <p>
-            Struggling with <strong>alcohol addiction</strong> can be overwhelming, but recovery is possible. Our alcohol rehab program at Tree Of Live Rehab Center provides a holistic approach, including medical detox, counseling, and ongoing support. We offer evidence-based therapies such as Cognitive Behavioral Therapy (CBT) and group counseling to address the root causes of addiction and promote long-term recovery.
+            Struggling with <strong>alcohol addiction</strong> can be overwhelming, but recovery is possible. Our alcohol rehab program at Tree Of Life Rehab Center provides a holistic approach, including medical detox, counseling, and ongoing support. We offer evidence-based therapies such as Cognitive Behavioral Therapy (CBT) and group counseling to address the root causes of addiction and promote long-term recovery.
           </p>
           <p>
             Whether you're dealing with long-term alcohol dependence or have recently experienced difficulties with alcohol abuse, our program is designed to help you break the cycle and rebuild your health and life. We use proven methods to manage withdrawal symptoms and minimize the risk of relapse.
@@ -40,7 +40,7 @@ const AlcoholHeroinRehab = () => {
         <div className="rehab-program-content">
             <h2>Heroin Addiction Rehab Program</h2>
             <p>
-            <strong>Heroin addiction</strong> is a serious, life-threatening condition, but our specialized rehab program can help. At Tree Of Live Rehab Center, we offer a structured treatment plan that includes medical detoxification, intensive therapy, and support systems to ensure a full recovery.
+            <strong>Heroin addiction</strong> is a serious, life-threatening condition, but our specialized rehab program can help. At Tree Of Life Rehab Center, we offer a structured treatment plan that includes medical detoxification, intensive therapy, and support systems to ensure a full recovery.
           </p>
           <p>
             Our heroin addiction rehab program focuses on addressing both the physical and psychological aspects of addiction. With individualized care, patients receive treatment that helps reduce cravings, manage withdrawal, and rebuild emotional well-being.

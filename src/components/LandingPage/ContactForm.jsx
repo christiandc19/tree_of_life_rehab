@@ -17,7 +17,7 @@ const ContactForm = () => {
         setButtonText("Message Sent");
 
         // Send the email using EmailJS
-        emailjs.sendForm('service_bdfl0ie', 'template_4lmc4or', form.current, 'CLcHWAKSemVMd1_sU')
+        emailjs.sendForm('service_bdfl0ie', 'template_rgbzq2s', form.current, 'CLcHWAKSemVMd1_sU')
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
@@ -37,7 +37,7 @@ const ContactForm = () => {
             <div className="contactFormHeader contact2-container ">
                 <div className="container">
                 <h1>Start Your Recovery Today</h1>
-                <p>If you or someone you love is struggling with both mental health and substance use disorders, don’t wait. Contact Tree Of Live Rehab Center to learn more about our dual diagnosis treatment program and take the first step towards a healthier, addiction-free life.</p>
+                <p>If you or someone you love is struggling with both mental health and substance use disorders, don’t wait. Contact Tree Of Life Rehab Center to learn more about our dual diagnosis treatment program and take the first step towards a healthier, addiction-free life.</p>
                 <i><p>We'll keep your contact information strictly confidential.</p></i>
                 </div>
             </div>
@@ -108,7 +108,7 @@ const ContactForm = () => {
                                     ></textarea>
 
                             <div className="disclaimer">
-                              <p>Tree Of Live Rehab needs the contact information you provide to us to contact you about our products and services. You may unsubscribe from these communications at any time. For information on how to unsubscribe, as well as our privacy practices and commitment to protecting your privacy, please review our  
+                              <p>Tree Of Life Rehab needs the contact information you provide to us to contact you about our products and services. You may unsubscribe from these communications at any time. For information on how to unsubscribe, as well as our privacy practices and commitment to protecting your privacy, please review our  
                               <LinkRoll activeClass="active" to="top" spy={true} smooth={true} duration={500}>
                                   <Link to="/privacy-policy"><span> Privacy Policy </span></Link>
                               </LinkRoll></p>
@@ -122,7 +122,7 @@ const ContactForm = () => {
                     </div>
 
                     <div className="google-map">
-                        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1800%20Vine%20St.%20Los%20Angeles%20Ca%2090028+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps devices</a></iframe>
+                    <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=2171%20E.%20Francisco%20Blvd.%20San%20Rafael,%20CA%2094901+(Tree%20Of%20Life%20Rehab)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps devices</a></iframe>
                     </div>
 
                 </div>

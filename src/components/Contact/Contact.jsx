@@ -16,8 +16,8 @@ const Contact = () => {
                 <div className="contact-hero-content">
                   <h1>Contact Us</h1>
                   <h2>Reach out to us for any inquiries, appointments, or assistance. </h2>
-                  <p><a href="tel:8184520201"> +1 (818) 452-0201</a></p>
-                </div>
+                  <p><a href="tel:3233645172"> 1 (323) 364-5172</a></p>
+                  </div>
             </div>
      </div>
      <ContactForm />

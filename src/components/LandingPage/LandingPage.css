@@ -39,6 +39,7 @@
   width: 100%;
   background-color: #f6f4f2; /* Black overlay */
   z-index: 0;
+
 }
 
 .landing-content {
@@ -131,7 +132,6 @@
   .landing-logo {
     width: 30%;
   }
-  
 
     .landing h1 {
         font-size: 2rem;
@@ -140,7 +140,6 @@
     .landing h2 {
       text-align: center;
   }
-
 
     .landing p {
       font-size: 1rem;
@@ -153,4 +152,22 @@
   .landing-logo {
     width: 50%;
   }
+
+  .hero-btn .hero-btn1 {
+    background-color: #2E788C;
+    color: white;
+    border: none;
+    padding: .5rem 2rem;
+    border-radius: 5px;
+  }
+  
+  .hero-btn .hero-btn2 {
+    background-color: #ffffff;
+    color: #2E788C;
+    border: none;
+    padding: .5rem 2rem;
+    border-radius: 5px;
+  }
+
+
 }
