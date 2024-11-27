@@ -1,9 +1,10 @@
 import React from 'react';
 import './FentanylAddiction.css';
 import SideBarInsurance from './SideBarInsurance';
-import SectionImage from '../../assets/cocaine_addict.webp'
 import AccordionMenu from './AccordionMenu';
 import ContactForm from '../LandingPage/ContactForm';
+import WhyUS from '../WhyUsAccordion/WhyUsAccordion';
+
 
 const FentanylAddiction = () => {
   return (
@@ -16,11 +17,13 @@ const FentanylAddiction = () => {
             </div>
           </div>
 
-          <div className='fentanyl-flex'>
+          <div className='fentanyl-flex container'>
             <div className='fentanyl-menu'>
 
                 <AccordionMenu />
                 <SideBarInsurance />
+                <br/>
+                <WhyUS />
             </div>
             
             
@@ -47,10 +50,6 @@ const FentanylAddiction = () => {
                 <h2>Why Fentanyl is So Dangerous</h2>
                 <p>Fentanyl's potency makes it highly addictive and prone to causing overdose, even in small doses. The body quickly builds a tolerance, requiring higher amounts to achieve the same effect, which increases the likelihood of fatal overdose. When mixed with other substances, especially heroin or cocaine, the risk multiplies, often without the user's knowledge.
                 </p>
-
-                <div className='fentanyl-image'>
-                    <img src={SectionImage} alt='alcoholic' loading='lazy' />
-                </div>
 
                 <h2>Treatment Options for Fentanyl Addiction</h2>
                 <p>Overcoming fentanyl addiction requires a comprehensive and structured approach, combining medical treatment and psychological support. The following are common steps in the treatment process:

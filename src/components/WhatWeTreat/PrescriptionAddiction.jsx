@@ -1,9 +1,10 @@
 import React, { useRef } from 'react';
 import './PrescriptionAddiction.css';
 import SideBarInsurance from './SideBarInsurance';
-import SectionImage from '../../assets/cocaine_addict.webp'
+import SectionImage from '../../assets/ativan_section_image1.webp'
 import AccordionMenu from './AccordionMenu';
 import ContactForm from '../LandingPage/ContactForm';
+import WhyUS from '../WhyUsAccordion/WhyUsAccordion';
 
 const PrescriptionAddiction = () => {
   return (
@@ -16,11 +17,13 @@ const PrescriptionAddiction = () => {
             </div>
           </div>
 
-          <div className='prescription-flex'>
+          <div className='prescription-flex container'>
             <div className='prescription-menu'>
 
                 <AccordionMenu />
                 <SideBarInsurance />
+                <br/>
+                <WhyUS />
             </div>
             
             
@@ -66,6 +69,7 @@ const PrescriptionAddiction = () => {
                   </ul>
                   If you or someone you know is showing these signs, it’s important to seek help as early as possible.
                 </p>
+                <br />
 
                 <div className='prescription-image'>
                     <img src={SectionImage} alt='alcoholic' loading='lazy' />

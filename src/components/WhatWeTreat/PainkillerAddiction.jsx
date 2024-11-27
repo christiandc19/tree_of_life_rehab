@@ -1,9 +1,10 @@
 import React from 'react';
 import './PainkillerAddiction.css';
 import SideBarInsurance from './SideBarInsurance';
-import SectionImage from '../../assets/cocaine_addict.webp';
+import SectionImage from '../../assets/painkiller_hero.webp';
 import AccordionMenu from './AccordionMenu';
 import ContactForm from '../LandingPage/ContactForm';
+import WhyUS from '../WhyUsAccordion/WhyUsAccordion';
 
 const PainkillerAddiction = () => {
   return (
@@ -16,10 +17,12 @@ const PainkillerAddiction = () => {
             </div>
           </div>
 
-          <div className='painkiller-flex'>
+          <div className='painkiller-flex container'>
             <div className='painkiller-menu'>
               <AccordionMenu />
               <SideBarInsurance />
+              <br/>
+              <WhyUS />
             </div>
 
             <div className='painkiller-caption'>

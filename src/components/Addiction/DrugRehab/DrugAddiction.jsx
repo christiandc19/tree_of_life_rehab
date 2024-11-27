@@ -4,6 +4,7 @@ import SideBarInsurance from '../../WhatWeTreat/SideBarInsurance';
 import DrugAddictionImage from '../../../assets/mental_health_disorder.webp';
 import RehabAccordionMenu from '../../Addiction/RehabAccordionMenu';
 import ContactForm from '../../LandingPage/ContactForm';
+import WhyUS from '../../WhyUsAccordion/WhyUsAccordion';
 
 const DrugAddiction = () => {
   return (
@@ -11,15 +12,17 @@ const DrugAddiction = () => {
       <div className='drug-addiction'>
         <div className='drug-addiction-content'>
           <div className='drug-addiction-hero'>
-            <div className='image-caption'>
+            <div className='drug-addiction-image-caption'>
               <h1>Drug Addiction Rehab</h1>
             </div>
           </div>
 
-          <div className='drug-addiction-flex'>
+          <div className='drug-addiction-flex container'>
             <div className='drug-addiction-menu'>
               <RehabAccordionMenu />
               <SideBarInsurance />
+              <br/>
+              <WhyUS />
             </div>
 
             <div className='drug-addiction-caption'>

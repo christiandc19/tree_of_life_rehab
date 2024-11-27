@@ -1,9 +1,10 @@
 import React, { useRef } from 'react';
 import './CannabisAddiction.css';
 import SideBarInsurance from './SideBarInsurance';
-import SectionImage from '../../assets/cocaine_addict.webp';
+import SectionImage from '../../assets/meth_hero.webp';
 import AccordionMenu from './AccordionMenu';
 import ContactForm from '../LandingPage/ContactForm';
+import WhyUS from '../WhyUsAccordion/WhyUsAccordion';
 
 const CannabisAddiction = () => {
   return (
@@ -16,10 +17,12 @@ const CannabisAddiction = () => {
             </div>
           </div>
 
-          <div className='cannabis-flex'>
+          <div className='cannabis-flex container'>
             <div className='cannabis-menu'>
               <AccordionMenu />
               <SideBarInsurance />
+              <br/>
+              <WhyUS />
             </div>
 
             <div className='cannabis-caption'>

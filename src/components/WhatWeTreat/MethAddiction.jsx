@@ -1,9 +1,10 @@
 import React, { useRef } from 'react';
 import './MethAddiction.css';
 import SideBarInsurance from './SideBarInsurance';
-import SectionImage from '../../assets/cocaine_addict.webp'
+import SectionImage from '../../assets/depressed_man3.webp'
 import AccordionMenu from './AccordionMenu';
 import ContactForm from '../LandingPage/ContactForm';
+import WhyUS from '../WhyUsAccordion/WhyUsAccordion';
 
 const MethAddiction = () => {
   return (
@@ -16,11 +17,13 @@ const MethAddiction = () => {
             </div>
           </div>
 
-          <div className='meth-flex'>
+          <div className='meth-flex container'>
             <div className='meth-menu'>
 
                 <AccordionMenu />
                 <SideBarInsurance />
+                <br/>
+                <WhyUS />
             </div>
             
             
@@ -56,6 +59,7 @@ const MethAddiction = () => {
                   </ul>
                   Meth addiction often escalates quickly, making early intervention vital to prevent irreversible damage.
                 </p>
+                <br/>
 
                 <div className='meth-image'>
                     <img src={SectionImage} alt='alcoholic' loading='lazy' />

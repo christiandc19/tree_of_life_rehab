@@ -4,6 +4,7 @@ import SideBarInsurance from '../../WhatWeTreat/SideBarInsurance';
 import XanaxImage from '../../../assets/xanax_section_image1.webp'; // Replace with actual image path
 import RehabAccordionMenu from '../../Addiction/RehabAccordionMenu';
 import ContactForm from '../../LandingPage/ContactForm';
+import WhyUS from '../../WhyUsAccordion/WhyUsAccordion';
 
 const XanaxRehab = () => {
   return (
@@ -11,15 +12,17 @@ const XanaxRehab = () => {
       <div className='xanax-rehab'>
         <div className='xanax-rehab-content'>
           <div className='xanax-rehab-hero'>
-            <div className='image-caption'>
+            <div className='xanax-image-caption'>
               <h1>Xanax Addiction Rehab</h1>
             </div>
           </div>
 
-          <div className='xanax-rehab-flex'>
+          <div className='xanax-rehab-flex container'>
             <div className='xanax-rehab-menu'>
               <RehabAccordionMenu />
               <SideBarInsurance />
+              <br/>
+              <WhyUS />
             </div>
 
             <div className='xanax-rehab-caption'>

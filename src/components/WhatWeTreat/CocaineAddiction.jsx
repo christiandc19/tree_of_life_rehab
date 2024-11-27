@@ -1,9 +1,10 @@
 import React, { useRef } from 'react';
 import './CocaineAddiction.css';
 import SideBarInsurance from './SideBarInsurance';
-import SectionImage from '../../assets/cocaine_addict.webp'
+import SectionImage from '../../assets/about-us.webp'
 import AccordionMenu from './AccordionMenu';
 import ContactForm from '../LandingPage/ContactForm';
+import WhyUS from '../WhyUsAccordion/WhyUsAccordion';
 
 const CocaineAddiction = () => {
   return (
@@ -16,11 +17,13 @@ const CocaineAddiction = () => {
             </div>
           </div>
 
-          <div className='cocaine-flex'>
+          <div className='cocaine-flex container'>
             <div className='cocaine-menu'>
 
                 <AccordionMenu />
                 <SideBarInsurance />
+                <br/>
+                <WhyUS />
             </div>
             
             

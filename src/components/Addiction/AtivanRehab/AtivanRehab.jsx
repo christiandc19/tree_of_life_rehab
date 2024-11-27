@@ -4,6 +4,7 @@ import SideBarInsurance from '../../WhatWeTreat/SideBarInsurance';
 import AtivanImage from '../../../assets/ativan_section_image2.webp'; // Replace with actual image path
 import RehabAccordionMenu from '../../Addiction/RehabAccordionMenu';
 import ContactForm from '../../LandingPage/ContactForm';
+import WhyUS from '../../WhyUsAccordion/WhyUsAccordion';
 
 const AtivanRehab = () => {
   return (
@@ -11,15 +12,17 @@ const AtivanRehab = () => {
       <div className='ativan-rehab'>
         <div className='ativan-rehab-content'>
           <div className='ativan-rehab-hero'>
-            <div className='image-caption'>
+            <div className='ativan-image-caption'>
               <h1>Ativan Addiction Rehab</h1>
             </div>
           </div>
 
-          <div className='ativan-rehab-flex'>
+          <div className='ativan-rehab-flex container'>
             <div className='ativan-rehab-menu'>
               <RehabAccordionMenu />
               <SideBarInsurance />
+              <br/>
+              <WhyUS />
             </div>
 
             <div className='ativan-rehab-caption'>

@@ -2,7 +2,6 @@
 
 .rehab-accordion-menu {
     width: 100%;
-    margin: 10px 0;
 }
 
 .rehab-accordion-menu-button {
@@ -43,7 +42,15 @@
 
 .rehab-accordion-menu-content li {
     padding: 10px 0;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.267);
 }
+
+
+.rehab-accordion-menu-content li a {
+    color: black;
+
+}
+
 
 .rehab-accordion-menu-content.open {
     max-height: none;

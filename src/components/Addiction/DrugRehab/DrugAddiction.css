@@ -19,19 +19,20 @@
     z-index: 1;
 }
 
-.image-caption {
+.drug-addiction-image-caption {
     position: absolute;
-    bottom: 10%;
+    bottom: 30%;
     width: 100%;
     z-index: 2;
 }
 
-.image-caption h1 {
+.drug-addiction-image-caption h1 {
     color: white;
     text-align: center;
     font-family: "Merriweather", serif;
     font-weight: 300;
     font-style: normal;
+    font-size: 3rem;
 }
 
 .drug-addiction-flex {
@@ -88,9 +89,9 @@
 }
 
 @media screen and (max-width: 600px) {
-    .image-caption h1 {
+    
+    .drug-addiction-image-caption h1 {
         font-size: 2rem;
-        line-height: normal;
     }
 
     .drug-addiction-image img {

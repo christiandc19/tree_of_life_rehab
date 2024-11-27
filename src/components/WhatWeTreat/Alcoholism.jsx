@@ -4,6 +4,7 @@ import SideBarInsurance from './SideBarInsurance';
 import AlcoholismImage from '../../assets/alcoholic_man.webp'
 import AccordionMenu from './AccordionMenu';
 import ContactForm from '../LandingPage/ContactForm';
+import WhyUS from '../WhyUsAccordion/WhyUsAccordion';
 
 const Alcoholism = () => {
 
@@ -17,11 +18,14 @@ const Alcoholism = () => {
             </div>
           </div>
 
-          <div className='alcoholism-flex'>
+          <div className='alcoholism-flex container'>
             <div className='alcoholism-menu'>
 
                 <AccordionMenu />
                 <SideBarInsurance />
+                <br/>
+                <WhyUS />
+
             </div>
             
             

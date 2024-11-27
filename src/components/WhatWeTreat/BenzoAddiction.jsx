@@ -1,9 +1,10 @@
 import React from 'react';
 import './BenzoAddiction.css';
 import SideBarInsurance from './SideBarInsurance';
-import SectionImage from '../../assets/cocaine_addict.webp';
+import SectionImage from '../../assets/benzo_hero.webp';
 import AccordionMenu from './AccordionMenu';
 import ContactForm from '../LandingPage/ContactForm';
+import WhyUS from '../WhyUsAccordion/WhyUsAccordion';
 
 const BenzoAddiction = () => {
   return (
@@ -16,10 +17,12 @@ const BenzoAddiction = () => {
             </div>
           </div>
 
-          <div className='benzo-flex'>
+          <div className='benzo-flex container'>
             <div className='benzo-menu'>
               <AccordionMenu />
               <SideBarInsurance />
+              <br/>
+              <WhyUS />
             </div>
 
             <div className='benzo-caption'>

@@ -4,6 +4,7 @@ import SideBarInsurance from '../../WhatWeTreat/SideBarInsurance';
 import HeroinImage from '../../../assets/depressed_man.webp'; // Replace with actual image path
 import RehabAccordionMenu from '../../Addiction/RehabAccordionMenu';
 import ContactForm from '../../LandingPage/ContactForm';
+import WhyUS from '../../WhyUsAccordion/WhyUsAccordion';
 
 const HeroinProgram = () => {
   return (
@@ -11,15 +12,17 @@ const HeroinProgram = () => {
       <div className='heroin-program'>
         <div className='heroin-program-content'>
           <div className='heroin-program-hero'>
-            <div className='image-caption'>
+            <div className='heroin-image-caption'>
               <h1>Heroin Addiction Program</h1>
             </div>
           </div>
 
-          <div className='heroin-program-flex'>
+          <div className='heroin-program-flex container'>
             <div className='heroin-program-menu'>
               <RehabAccordionMenu />
               <SideBarInsurance />
+              <br/>
+              <WhyUS />
             </div>
 
             <div className='heroin-program-caption'>

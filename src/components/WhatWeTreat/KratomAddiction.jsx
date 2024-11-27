@@ -1,9 +1,10 @@
 import React, { useRef } from 'react';
 import './KratomAddiction.css';
 import SideBarInsurance from './SideBarInsurance';
-import SectionImage from '../../assets/cocaine_addict.webp';
+import SectionImage from '../../assets/kratom_hero.webp';
 import AccordionMenu from './AccordionMenu';
 import ContactForm from '../LandingPage/ContactForm';
+import WhyUS from '../WhyUsAccordion/WhyUsAccordion';
 
 const KratomAddiction = () => {
   return (
@@ -16,10 +17,12 @@ const KratomAddiction = () => {
             </div>
           </div>
 
-          <div className='kratom-flex'>
+          <div className='kratom-flex container'>
             <div className='kratom-menu'>
               <AccordionMenu />
               <SideBarInsurance />
+              <br/>
+              <WhyUS />
             </div>
 
             <div className='kratom-caption'>

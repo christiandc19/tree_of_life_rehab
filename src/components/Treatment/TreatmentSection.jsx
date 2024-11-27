@@ -2,7 +2,7 @@ import React from 'react';
 import './TreatmentSection.css';
 import SoberLivingImage1 from '../../assets/treatment-section.webp'; 
 import SoberLivingImage2 from '../../assets/sober_living_2.webp';
-import ProgramOptionsMenu from '../WhyUsAccordion/WhyUsAccordion';
+import WhyUS from '../WhyUsAccordion/WhyUsAccordion';
 import SidebarInsurance from '../WhatWeTreat/SideBarInsurance';
 
 import { Link } from "react-router-dom";
@@ -15,7 +15,7 @@ const SoberLivingSection = () => {
       <div className="treatment-section-content">
         {/* Sidebar */}
         <aside className="treatment-section-sidebar">
-          <ProgramOptionsMenu />
+          <WhyUS />
           <SidebarInsurance />
         </aside>
 

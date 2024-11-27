@@ -1,9 +1,10 @@
 import React from 'react';
 import './InhalantAddiction.css';
 import SideBarInsurance from './SideBarInsurance';
-import SectionImage from '../../assets/cocaine_addict.webp';
+import SectionImage from '../../assets/inhalant_hero.webp';
 import AccordionMenu from './AccordionMenu';
 import ContactForm from '../LandingPage/ContactForm';
+import WhyUS from '../WhyUsAccordion/WhyUsAccordion';
 
 const InhalantAddiction = () => {
   return (
@@ -16,10 +17,13 @@ const InhalantAddiction = () => {
             </div>
           </div>
 
-          <div className='inhalant-flex'>
+          <div className='inhalant-flex container'>
             <div className='inhalant-menu'>
               <AccordionMenu />
               <SideBarInsurance />
+              <br/>
+              <WhyUS />
+
             </div>
 
             <div className='inhalant-caption'>
