@@ -1,25 +1,27 @@
 /* AlcoholHeroinRehab.css */
 
-.treatment-section {
+.admissions-section {
     height: auto;
     padding: 3rem 1rem;
+    max-width: 90%;
+    margin: auto;
   }
   
-  .treatment-section-content {
+  .admissions-section-content {
     display: flex;
     justify-content: center;
     gap: 1rem;
   }
   
-  .treatment-section-sidebar {
-    width: 40%;
-  }
-  
-  .treatment-section-caption {
+  .admissions-section-sidebar {
     width: 100%;
   }
   
-  .treatment-section-header h1 {
+  .admissions-section-caption {
+    width: 100%;
+  }
+  
+  .admissions-section-header h1 {
     text-align: left;
     font-size: 1.3rem;
     color: #1b1c1d;
@@ -32,35 +34,35 @@
   }
   
   
-  .treatment-section-header p {
+  .admissions-section-header p {
     font-size: 16px;
     color: rgb(32, 30, 30);
     line-height: normal;
   }
   
-  .treatment-section-flex {
+  .admissions-section-flex {
     display: flex;
     justify-content: center;
     gap: 1rem;
     padding: 1rem 0;
   }
   
-  .treatment-section-flex-image {
+  .admissions-section-flex-image {
     width: 100%;
     margin: auto;
   }
   
-  .treatment-section-flex-image img {
+  .admissions-section-flex-image img {
     width: 100%;
     border-radius: 10px;
   }
   
-  .treatment-section-flex-caption {
+  .admissions-section-flex-caption {
     width: 100%;
     margin: auto;
   }
   
-  .treatment-section-flex-caption h2 {
+  .admissions-section-flex-caption h2 {
     text-align: left;
     font-size: 1rem;
     color: #1b1c1d;
@@ -69,29 +71,24 @@
     font-weight: 500;
     font-style: normal;
     line-height: normal;
-    padding: 2rem 0 .5rem 0;
   }
 
-  .treatment-section-flex-caption p {
+  .admissions-section-flex-caption p {
     font-size: 16px;
     color: rgb(32, 30, 30);
     line-height: normal;
     text-align: justify;
   }
   
-  .treatment-section-flex-caption ul li {
+  .admissions-section-flex-caption ul li {
     list-style-type: disc;
 }
 
-  .treatment-section-body {
+  .admissions-section-body {
     padding: 2rem 0;
   }
 
-  .treatment-btn {
-    padding-top: 1rem;
-  }
-
-  .treatment-btn button {
+  .admissions-btn button {
     display: flex;
     align-items: center;
     background-color: #40b4e2;
@@ -107,41 +104,28 @@
     justify-content: center;
   }
 
-  .treatment-btn button:hover {
+  .admissions-btn button:hover {
     background-color: #8a5536;
   }
   
   
   @media screen and (max-width:940px) {
     
+    .admissions-section-caption {
+      width: 100%;
+      margin-top: 3rem;
+    }
 
-    .treatment-section-flex {
+    .admissions-section-flex {
       flex-wrap: wrap;
     }
 
-    .treatment-section-content {
-      flex-wrap: wrap-reverse;
+    .admissions-section-content {
+      flex-wrap: wrap;
     }
 
-    .treatment-section-sidebar {
+    .admissions-section-sidebar {
         width: 70%;
-    }
-
-    .treatment-section-header h1 {
-      text-align: center;
-    }
-    
-    .treatment-section-header p {
-      text-align: justify;
-    }
-
-    .treatment-section-flex-caption h2 {
-      text-align: center;
-      margin-top: 2rem;
-    }
-
-    .treatment-btn button {
-      margin: auto;
     }
 
 }
@@ -151,8 +135,21 @@
   
   @media screen and (max-width:700px) {
 
-    .treatment-section-sidebar {
+    .admissions-section-sidebar {
       width: 100%;
+    }
+
+    .admissions-section {
+      max-width: 100%;
+    }
+
+    .admissions-section-header h1 {
+      text-align: center;
+    }
+    
+    
+    .admissions-section-header p {
+      text-align: justify;
     }
     
   }

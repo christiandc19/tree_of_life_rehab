@@ -1,70 +1,79 @@
-/* General Variables */
-:root {
-    --primary-color: #2E788C;
-    --hover-color: #cd8c63;
-    --background-light: #f6f4f2;
-    --text-color: #292525;
-}
+/* General Navbar Styles */
 
-/* Body Scroll Lock */
 .body-no-scroll {
     overflow: hidden;
-}
+  }
 
-/* Navbar Styles */
 .navbar {
-    background-color: var(--background-light);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
     top: 0;
     width: 100%;
     z-index: 10;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    background-color: white;
 }
 
 .navbar-logo {
     width: 120px;
     padding: 1rem;
+    z-index: 1000; /* Ensure the navbar stays above other content */
 }
 
-.navbar-logo img {
+ .navbar-logo img {
     width: 100%;
     display: block;
-}
+} 
 
 .nav-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    padding: 0 1rem;
+    width: 100%; /* Make sure the content inside the navbar also spans the full width */
+}
+
+.nav-menu-container {
+    padding: .3rem;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.479);
 }
 
 .nav-menu {
     display: flex;
     list-style: none;
-    margin: 0;
-    padding: 0;
     transition: all 0.3s ease;
+    margin: 0;
+    padding: 1rem 1rem;
+}
+
+.call-btn {
+    position: absolute;
+    right: 25%;
+    display: none;
+}
+
+.call-btn button {
+    border: 1px solid #0068B5;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
 }
 
 .nav-menu li {
     position: relative;
+    margin: auto;
+    padding: 0rem 1rem;
 }
 
 .nav-menu a {
-    color: var(--text-color);
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    font-weight: 500;
-    transition: color 0.3s ease;
+    color: rgb(26, 24, 24); /* Initial link color */
+    text-decoration: none; /* Removes default underline */
+    padding: 0.5rem 0; /* Adds vertical padding */
+    font-size: 14px; /* Text size */
+    text-transform: uppercase; /* Uppercase text */
+    width: max-content; /* Link's width adjusts to its content */
+    position: relative; /* For positioning the ::after element */
 }
 
-.nav-menu a:hover,
-.nav-menu a:focus-visible {
-    color: var(--hover-color);
+.nav-menu a:hover {
+    color: #10bad8d5; /* Changes text color on hover */
 }
 
 /* Hamburger Menu */
@@ -72,123 +81,173 @@
     display: none;
     font-size: 2rem;
     cursor: pointer;
-    color: var(--primary-color);
-    background: none;
-    border: none;
-    outline: none;
-    z-index: 1001;
+    color: rgb(22, 21, 21); /* Ensure the icon is visible against the background */
+    z-index: 1001; /* Higher than the nav menu */
+    background: none; /* Remove any background color */
+    border: none; /* Remove any border */
+    outline: none; /* Remove the outline on focus */
 }
 
-.hamburger:focus-visible {
-    outline: 2px solid var(--hover-color);
-    outline-offset: 4px;
+/* Remove border and outline when the icon is clicked or focused */
+.hamburger:focus,
+.hamburger:active {
+    outline: none; /* Remove outline when the icon is focused */
+    border: none; /* Ensure no border appears on active state */
+    box-shadow: none; /* Remove any box-shadow if applied */
 }
 
-/* Dropdown Menu */
+
+/* Dropdown Menu Styles */
 .dropdown {
     position: relative;
 }
 
 .dropdown-menu {
+    background-color: #ffffff; /* Menu background color */
     display: none;
     position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: var(--background-light);
-    border-radius: 0.2rem;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    top: 120%; /* Aligns the dropdown just below the parent */
     z-index: 1000;
     flex-direction: column;
     width: max-content;
-    padding: 0.5rem 0;
+    border-radius: 10px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
+/* Show dropdown menu on hover (for desktop) or when active (for mobile) */
 .dropdown:hover .dropdown-menu,
 .dropdown-menu.active {
-    display: flex;
+    display: flex; /* Flexbox for column layout on mobile */
 }
 
 .dropdown-menu li {
-    margin: 0;
-    padding: 0.5rem 1rem;
-    border-bottom: 1px dashed rgba(0, 0, 0, 0.301);
+    width: 100%;
+    left: -2.5rem;
+    padding: 0rem 1rem;
 }
 
 .dropdown-menu a {
-    color: var(--text-color);
-    font-size: 0.9rem;
-    font-family: 'Roboto', sans-serif;
-    transition: color 0.3s ease;
+    color: rgb(29, 27, 27);
+    font-family: 'roboto';
+    
 }
 
 .dropdown-menu a:hover {
-    color: var(--hover-color);
+    color: #ffd001;
 }
 
+.nav-menu a::after {
+    background-color: rgba(15, 140, 212, 0); /* Color of the underline */
+}
+
+/* Additional Hover Effect */
+
+
+
+
 /* Responsive Navbar */
-@media screen and (max-width: 940px) {
-    .hamburger {
+@media screen and (max-width: 1250px) {
+
+    .navbar-logo {
+        width: 100px;    
+        padding: 1rem;
+    }
+
+    .call-btn {
         display: block;
     }
 
-    .nav-menu {
-        flex-direction: column;
-        position: fixed;
-        top: 0;
-        left: -100%; /* Initially hidden off-screen */
-        width: 70%;
-        height: 100vh;
-        background-color: var(--primary-color);
-        transition: left 0.3s ease;
-        z-index: 999;
-        padding: 4rem 2rem;
-        overflow-y: auto;
+    .navbar {
+        background-color: transparent; /* Or any desired color */
     }
 
-    .nav-menu.active {
-        left: 0; /* Slide into view */
+    .dropdown-menu::-webkit-scrollbar {
+        width: 8px; /* Customize scrollbar width */
+      }
+    
+      .dropdown-menu::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.3); /* Scrollbar thumb color */
+        border-radius: 4px; /* Rounded edges */
+      }
+    
+      .dropdown-menu::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.1); /* Track color */
+      }
+    
+
+    .nav-box button:hover {
+        background-color: rgba(204, 51, 102, 0);
     }
 
-    .nav-menu li {
-        margin: 0;
-        text-align: left;
-        border-bottom: 1px dashed rgba(255, 255, 255, 0.4);
-        padding: 0.5rem 0;
+    .hamburger {
+        display: block; /* Show the hamburger menu icon on smaller screens */
     }
 
+    .contact-us-button button {
+        display: none;
+    }
+
+        .nav-menu {
+            flex-direction: column;
+            position: fixed; /* Keep the nav menu fixed within the viewport */
+            top: 0;
+            left: -100%; /* Initially hide the menu off-screen to the left */
+            width: 70%; /* Set the desired width for the menu */
+            height: 100%; /* Cover the entire viewport height */
+            background-color: #ffffff; /* Menu background color */
+            transition: left 0.3s ease; /* Smooth transition when sliding in */
+            z-index: 999; /* Ensure the menu stays on top of other content */
+            padding: 10rem 2rem 2rem 2rem; /* Adjust padding to fit the design */    
+        }
+
+        .nav-menu.active {
+            left: 0; /* Slide the menu into view */
+        }
+
+
+        .nav-menu::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .nav-menu::-webkit-scrollbar-thumb {
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 4px;
+        }
+
+        .nav-menu::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.1);
+        }
+    
+        .nav-menu li {
+            margin-left: 0;
+            margin: 0.5rem 0;
+            text-align: left;
+            border-bottom: 1px dashed rgba(24, 23, 23, 0.308); /* Optional separator */
+        }
+    
+        .dropdown-menu {
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #ffffff; /* Optional background color for dropdowns */
+            overflow-y: auto; /* Add scroll to the dropdown */
+            max-height: 300px;
+            border: 1px solid rgba(34, 32, 32, 0.116);
+        }
+    
+
+    .dropdown-menu a:hover {
+        color: #ffffff;
+    }
+    
     .nav-menu a {
-        color: #fff;
+        color: #181717; /* Link color for the menu */
     }
-
+    
     .nav-menu a:hover {
-        color: var(--hover-color);
+        color: #10bad8d5; /* Changes text color on hover */
     }
+    
 
-    .dropdown-menu {
-        position: relative;
-        top: 0;
-        left: 0;
-        background-color: #6A6932;
-        width: 90%;
-        margin-left: 0;
-    }
-}
-
-/* Backdrop for Mobile Menu */
-.nav-backdrop {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 998;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.nav-backdrop.active {
-    display: block;
-    opacity: 1;
 }

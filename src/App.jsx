@@ -13,6 +13,8 @@ import DualDiagnosisProgram from './components/ProgramOptions/DualDiagnosis/Dual
 import MATProgram from './components/ProgramOptions/MATProgram/MAT';
 import VeteransAddiction from './components/ProgramOptions/VeteransAddiction/VeteransAddictionHero';
 import TreatmentPage from './components/Treatment/Treatment';
+import AdmissionsPage from './components/Admissions/Admissions';
+import RecoveryPage from './components/Recovery/Recovery';
 
 import DrugAddictionTreatment from './components/Addiction/DrugRehab/DrugAddiction';
 import HeroinProgram from './components/Addiction/HeroinProgram/HeroinProgram';
@@ -54,6 +56,12 @@ const App = () => {
 
         {/* Treatment */}
         <Route path="/treatment" element={<TreatmentPage />} />
+
+        {/* Admissions */}
+        <Route path="/admissions" element={<AdmissionsPage />} />
+
+        {/* Recovery */}
+        <Route path="/recovery" element={<RecoveryPage />} />
 
         <Route path="/alcoholism" element={<Alcoholism />} />
         <Route path="/cocaine-addiction-treatment" element={<CocaineAddictionTreatment />} />

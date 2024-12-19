@@ -6,62 +6,48 @@
   font-style: normal;
 }
 
-.about {
+.admissions-hero {
   width: 100%;
-  height: 50vh; /* Ensures it takes up the full viewport height */
+  height: 30vh;
   position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  z-index: 1; /* Ensures it stays above the background but doesn't interfere with the footer */
+  z-index: 1; /* Base layer for hero section */
+
 }
 
-.about:before {
+.admissions-hero:before {
   content: '';
   position: absolute;
-  background: url('../../assets/about-us-hero.webp') no-repeat center center/cover;
+  background: url('../../assets/tree_bg.webp') no-repeat center bottom/cover;
   height: 100%;
   width: 100%;
-  z-index: -1; /* Behind everything in the hero */
+  z-index: 1;
+  opacity: .2;
 }
 
-.about::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
+
+
+.admissions-hero-content {
   width: 100%;
-  background-color: #1b2f4d65; /* Black overlay */
-  z-index: 0; /* Between the image and content */
-}
-
-.about-us-content {
-  width: max-content;
   bottom: 20%;
-  left: 10%;
   position: absolute;
   padding: 1rem;
   text-align: center;
   z-index: 2; /* Ensures the content is above the overlay */
 }
 
-
-.about .aboutContainer {
-    width: 100%;
-}
-
-
-.about h1 {
-    font-size: 6rem;
-    color: rgb(255, 255, 255);
+.admissions-hero h1 {
+    font-size: 4rem;
+    color: rgb(26, 24, 24);
     letter-spacing: 2px;
     line-height: 6rem;
     font-family: 'Wildest', sans-serif;
-    text-align: left;
+    text-align: center;
 }
 
-.about h2 {
+.admissions-hero h2 {
     font-size: 2rem;
     color: rgb(255, 255, 255);
     text-align: left;
@@ -74,26 +60,41 @@
 
 @media screen and (max-width:940px) {
 
-  .about .content {
+  .admissions-hero-content {
     width: 100%;
     left: 0%;
   }
 
-    .about h1 {
-        font-size: 4rem;
+    .admissions-hero h1 {
+        font-size: 3rem;
         text-align: center;
         line-height: 3.5rem;
     }
-    .about h2 {
+    .admissions-hero h2 {
       text-align: center;
       font-size: 1.5rem;
   }
 
 
-    .about p {
+    .admissions-hero p {
       font-size: 1rem;
       color: rgb(255, 255, 255);
   }
+  
+
+}
+
+
+
+@media screen and (max-width:600px) {
+
+
+    .admissions-hero h1 {
+        font-size: 2.3rem;
+        text-align: center;
+        line-height: normal;
+    }
+
   
 
 }

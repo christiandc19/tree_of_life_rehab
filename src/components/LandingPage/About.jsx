@@ -69,14 +69,14 @@ const About = () => {
 
         <h1>About Us</h1>
         <p>
-        At Tree Of Life Rehab, we believe in the power of healing, transformation, and support. Established with the vision of providing comprehensive care for individuals battling addiction and mental health challenges, we offer a safe haven where recovery is not only possible but sustainable. Our team of compassionate professionals is dedicated to creating personalized treatment plans tailored to meet the unique needs of each individual.
+        Welcome to Tree of Life Rehab, a premier treatment facility nestled in the heart of San Rafael County. We specialize in providing compassionate care and effective treatment for individuals struggling with alcohol and substance abuse addiction.
         </p>
         <p>
-        We recognize that addiction is a multifaceted issue that affects every aspect of life, and that’s why our approach integrates medical, psychological, and holistic therapies. At Tree Of Life Rehab, we aim to not only address the immediate challenges of substance abuse but also foster long-term well-being and personal growth.
+        At Tree of Life Rehab, we believe in the power of renewal and growth. Our team of dedicated professionals creates personalized treatment plans tailored to each client’s unique needs, blending evidence-based therapies with holistic approaches to support mind, body, and spirit.
         </p>
-        <p>Our state-of-the-art facilities and experienced staff provide a supportive and nurturing environment for recovery. We offer a range of services, including detox, inpatient and outpatient care, dual diagnosis treatment, and relapse prevention. Every step of your journey is backed by our commitment to your health and recovery.</p>
-        <p>At Tree Of Life Rehab, you are never alone. We walk alongside you through the toughest battles, empowering you to reclaim your life, rediscover hope, and embrace Renewal.
-</p>
+        <p>In our safe and supportive environment, clients find the tools and encouragement they need to overcome addiction, rediscover purpose, and build a brighter future.</p>
+        <p>At Tree Of Life Rehab, you are never alone. We walk alongside you through the toughest battles, empowering you to reclaim your life, rediscover hope, and embrace Renewal</p>
+        <p>Let Tree of Life Recovery be your partner in healing and transformation. Together, we’ll cultivate strength, resilience, and a life full of possibilities.</p>
 
       </div>
     </section>

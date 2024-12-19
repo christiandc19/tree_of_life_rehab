@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 import { Link as LinkRoll } from "react-scroll";
 
 
-const SoberLivingSection = () => {
+const TreatmentSection = () => {
   return (
     <section className="treatment-section container">
       <div className="treatment-section-content">
@@ -23,9 +23,9 @@ const SoberLivingSection = () => {
         <div className="treatment-section-caption">
           {/* Header */}
           <header className="treatment-section-header">
-            <h1>Comprehensive Residential Addiction Treatment at Shasta County Rehab</h1>
+            <h1>Comprehensive Residential Addiction Treatment at Tree Of Life Rehab</h1>
             <p>
-            At Shasta County Rehab, we are dedicated to helping individuals achieve long-term recovery through our comprehensive residential addiction treatment program. Our personalized approach ensures that each client receives the care and support they need to overcome addiction and regain control of their lives.
+            At Tree Of Life Rehab, we are dedicated to helping individuals achieve long-term recovery through our comprehensive residential addiction treatment program. Our personalized approach ensures that each client receives the care and support they need to overcome addiction and regain control of their lives.
             </p>
           </header>
 
@@ -61,7 +61,7 @@ const SoberLivingSection = () => {
             <div className="treatment-section-flex-caption">
               <h2>Non-12 Step Rehab Program</h2>
               <p>
-              Shasta County Rehab offers a Non-12 Step Rehab Program designed to provide an alternative to traditional 12-step recovery models. Recognizing that recovery is not a one-size-fits-all journey, we offer diverse tools and strategies to support lasting sobriety.
+              Tree Of Life Rehab offers a Non-12 Step Rehab Program designed to provide an alternative to traditional 12-step recovery models. Recognizing that recovery is not a one-size-fits-all journey, we offer diverse tools and strategies to support lasting sobriety.
               </p>
               
               <p>
@@ -79,7 +79,7 @@ const SoberLivingSection = () => {
             <div className="treatment-section-flex-caption">
               <h2>Dual Diagnosis Treatment</h2>
               <p>
-              The Dual Diagnosis Treatment Program at Shasta County Rehab addresses the challenges of co-occurring disorders, such as substance addiction combined with mental health conditions like anxiety, PTSD, or depression.
+              The Dual Diagnosis Treatment Program at Tree Of Life Rehab addresses the challenges of co-occurring disorders, such as substance addiction combined with mental health conditions like anxiety, PTSD, or depression.
               </p>
               
               <p>
@@ -102,7 +102,7 @@ const SoberLivingSection = () => {
           <div className="treatment-section-flex-caption">
               <h2>Medication-Assisted Treatment (MAT)</h2>
               <p>
-              Medication-Assisted Treatment (MAT) at Shasta County Rehab is a proven, evidence-based approach for addressing opioid and heroin addiction. By combining FDA-approved medications with counseling and behavioral therapies, MAT treats the whole person, promoting a safe and effective recovery process.
+              Medication-Assisted Treatment (MAT) at Tree Of Life Rehab is a proven, evidence-based approach for addressing opioid and heroin addiction. By combining FDA-approved medications with counseling and behavioral therapies, MAT treats the whole person, promoting a safe and effective recovery process.
               </p>
               
               <p>
@@ -124,7 +124,7 @@ const SoberLivingSection = () => {
           <div className="treatment-section-flex-caption">
               <h2>Treatment Modalities and Therapies</h2>
               <p>
-              Shasta County Rehab employs a wide array of evidence-based modalities to address substance addiction and mental health disorders. Core therapies like Cognitive Behavioral Therapy (CBT) explore the connection between thoughts, emotions, and behaviors, empowering clients to break negative patterns.
+              Tree Of Life Rehab employs a wide array of evidence-based modalities to address substance addiction and mental health disorders. Core therapies like Cognitive Behavioral Therapy (CBT) explore the connection between thoughts, emotions, and behaviors, empowering clients to break negative patterns.
               </p>
               
               <p>
@@ -147,7 +147,7 @@ const SoberLivingSection = () => {
           <div className="treatment-section-flex-caption">
               <h2>Incidental Medical Services (IMS)</h2>
               <p>
-              At Shasta County Rehab, Incidental Medical Services (IMS) ensure clients receive safe and comprehensive care during detox and substance use treatment. These supplemental services, available 24/7, include obtaining medical histories, administering necessary tests, and overseeing the self-administration of medications.
+              At Tree Of Life Rehab, Incidental Medical Services (IMS) ensure clients receive safe and comprehensive care during detox and substance use treatment. These supplemental services, available 24/7, include obtaining medical histories, administering necessary tests, and overseeing the self-administration of medications.
               </p>
               
               <p>
@@ -225,4 +225,4 @@ const SoberLivingSection = () => {
   );
 };
 
-export default SoberLivingSection;
+export default TreatmentSection;

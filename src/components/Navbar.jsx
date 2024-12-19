@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link, useLocation } from 'react-router-dom';
 import logo from '../assets/logo.png';
-import logoDark from '../assets/logo-dark.png'; // Import the dark logo
 import './Navbar.css';
 
 const Navbar = () => {
@@ -18,9 +17,20 @@ const Navbar = () => {
     setIsMenuOpen(false);
   };
 
-  // Scroll event to handle background color and logo change
-  
+  // Add/remove 'body-no-scroll' class when menu state changes
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.classList.add('body-no-scroll');
+    } else {
+      document.body.classList.remove('body-no-scroll');
+    }
+    return () => {
+      document.body.classList.remove('body-no-scroll'); // Cleanup on component unmount
+    };
+  }, [isMenuOpen]);
 
+
+  // Scroll event to handle background color and logo change
 
   const scrollToTop = () => {
     window.scrollTo(0, 0); // Scroll to the top of the page
@@ -30,10 +40,10 @@ const Navbar = () => {
   const isHomePage = location.pathname === '/';
 
   return (
-    <nav className={`navbar ${isScrolled || !isHomePage ? 'scrolled' : ''}`} name="top">
+    <nav className='navbar' name="top">
       <div className="nav-box container">
         <div className="navbar-logo">
-          <img src={isScrolled || !isHomePage ? logoDark : logo} alt="logo" loading="lazy" />
+          <img src={logo} alt="logo" loading="lazy" />
         </div>
         <button
           className="hamburger"
@@ -45,6 +55,7 @@ const Navbar = () => {
         <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
           <li><Link to="/" onClick={() => { closeMenu(); scrollToTop(); }}>Home</Link></li>
           <li><Link to="/treatment" onClick={() => { closeMenu(); scrollToTop(); }}>Treatment</Link></li>
+          <li><Link to="/recovery" onClick={() => { closeMenu(); scrollToTop(); }}>Recovery</Link></li>
 
           {/* Dropdown for Program Options */}
           <li className="dropdown">
@@ -93,7 +104,8 @@ const Navbar = () => {
               <li><Link to="/ativan-rehab" onClick={() => { closeMenu(); scrollToTop(); }}>Ativan Rehab</Link></li>
             </ul>
           </li>
-
+          {/* <li><Link to="/sober-living" onClick={() => { closeMenu(); scrollToTop(); }}>Sober Living</Link></li> */}
+          <li><Link to="/admissions" onClick={() => { closeMenu(); scrollToTop(); }}>Admissions</Link></li>
           <li><Link to="/about" onClick={() => { closeMenu(); scrollToTop(); }}>About</Link></li>
           <li><Link to="/contact" onClick={() => { closeMenu(); scrollToTop(); }}>Contact Us</Link></li>
         </ul>

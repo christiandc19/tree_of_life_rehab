@@ -70,7 +70,6 @@ const ContactForm = () => {
                                         placeholder='Last Name (optional)' 
                                     /> 
                                     </div>
-                                    <br/>
 
                                     <div className="input-flex">
                                         <input 
@@ -90,20 +89,19 @@ const ContactForm = () => {
                                             title="Please enter a valid phone number." 
                                         /> 
                                     </div>
-                                    <br/>
                                     <input 
                                         type="text" 
                                         name='subject' 
                                         placeholder='Subject' 
                                         required 
-                                    /> <br/>
+                                    /> 
                                 </div>
                                 <div>
                                     <textarea 
                                         name="message" 
                                         placeholder="Message" 
                                         cols="30" 
-                                        rows="10" 
+                                        rows="6" 
                                         required
                                     ></textarea>
 
